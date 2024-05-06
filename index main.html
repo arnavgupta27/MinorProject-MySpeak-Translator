@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="initial-scale=1.0, maximum-scale=1.0, user-scalable=1"
+    />
+    <title>MySpeak | Making conversations easy</title>
+    <link rel="stylesheet" type="text/css" href="style VtoT.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <link rel="stylesheet" href="language style.css" />
+  </head>
+  <body>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark" id="navbar1">
+      <a class="navbar-brand" href="#">MySpeak</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="#section1">
+              Voice to Text <span class="sr-only">(current)</span></a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#section2">Text to Speech</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#section3">Translator</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- speech to text -->
+    <div class="container1 oneimage" id="section1">
+      <div class="voice_to_text">
+        <header class="header1">Convert your voice into text!</header>
+        <textarea
+          name=""
+          id="convert_text"
+          placeholder="Start Speaking"
+        ></textarea>
+        <button class="button1" id="click_to_record">Voice To Text</button>
+
+        <button class="button1" id="click_to_copy1">Copy to Clipboard</button>
+      </div>
+    </div>
+
+    <!-- text to speech -->
+    <div class="container1 twoimage" id="section2">
+      <div class="text_to_voice">
+        <header class="header2">Type anything and have it spoken aloud!</header>
+        <textarea id="convert_text1" placeholder="Enter text"></textarea>
+        <button class="button1" id="speechbutton">Convert to Speech</button>
+        <button class="button1" id="click_to_copy">Copy to Clipboard</button>
+      </div>
+    </div>
+
+    <!-- translator -->
+    <div class="container1 threeimage" id="section3">
+      <div class="voice_to_text">
+        <header class="header3">Translate to more than 40 languages!</header>
+        <div class="container3">
+          <div class="wrapper">
+            <div class="text-input">
+              <textarea
+                spellcheck="false"
+                class="from-text"
+                placeholder="Enter text"
+              ></textarea>
+              <textarea
+                spellcheck="false"
+                readonly
+                disabled
+                class="to-text"
+                placeholder="Translation"
+              ></textarea>
+            </div>
+            <ul class="controls">
+              <li class="row from">
+                <div class="icons">
+                  <i id="from" class="fas fa-volume-up"></i>
+                  <i id="from" class="fas fa-copy"></i>
+                </div>
+                <select></select>
+              </li>
+
+              <li class="row to">
+                <select></select>
+                <div class="icons">
+                  <i id="to" class="fas fa-volume-up"></i>
+                  <i id="to" class="fas fa-copy"></i>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <button class="button1" id="button2">Translate Text</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="language countries.js"></script>
+    <script src="language script.js"></script>
+    <script src="newscript TtoV.js" defer></script>
+    <script type="text/javascript" src="script VtoT.js"></script>
+  </body>
+</html>
